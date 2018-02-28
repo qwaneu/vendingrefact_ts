@@ -1,0 +1,37 @@
+{
+  "author": "QWAN",
+  "name": "vendingmachine_ts",
+  "description": "exercise for typescript unit testing with jasmine",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git.qwan.it/home/git/exercises/vendingmachine_js.git"
+  },
+  "watch": {
+    "test": "{src,test}/*.ts"
+  },
+  "scripts": {
+    "build": "tsc && npm run tslint",
+    "test": "jasmine-ts \"**/*_spec.ts\"",
+    "watch_test": "npm-watch test",
+    "autotest": "jasmine-node dist/ --watch dist/ --autotest --color",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "engines": {
+    "node": "~6.9.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.6",
+    "@types/lodash": "^4.14.102",
+    "@types/node": "^9.4.6",
+    "jasmine": "~2.8.0",
+    "jasmine-node": "~1.14.5",
+    "jasmine-ts": "^0.2.1",
+    "npm-watch": "^0.3.0",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.1"
+  }
+}

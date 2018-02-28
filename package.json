@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "ssh://git.qwan.it/home/git/exercises/vendingmachine_js.git"
+    "url": "ssh://git.qwan.it/home/git/exercises/vendingrefact_ts.git"
   },
   "watch": {
     "test": "{src,test}/*.ts"

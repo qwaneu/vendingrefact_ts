@@ -8,13 +8,18 @@
     "url": "ssh://git.qwan.it/home/git/exercises/vendingrefact_ts.git"
   },
   "watch": {
-    "test": "{src,test}/*.ts"
+    "test": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "ts",
+      "quiet": true
+    }
   },
   "scripts": {
     "build": "tsc && npm run tslint",
     "test": "jasmine-ts \"**/*_spec.ts\"",
     "watch_test": "npm-watch test",
-    "autotest": "jasmine-node dist/ --watch dist/ --autotest --color",
     "tslint": "tslint -c tslint.json -p tsconfig.json"
   },
   "engines": {

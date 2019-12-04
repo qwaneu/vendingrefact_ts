@@ -1,11 +1,11 @@
 {
   "author": "QWAN",
   "name": "vendingmachine_ts",
-  "description": "exercise for typescript unit testing with jasmine",
-  "version": "0.0.0",
+  "description": "exercise for code smells & refactoring with TypeScript and Jasmine",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
-    "url": "ssh://git.qwan.it/home/git/exercises/vendingrefact_ts.git"
+    "url": "git@github.com:qwaneu/vendingrefact_ts.git"
   },
   "watch": {
     "test": {
@@ -18,25 +18,22 @@
   },
   "scripts": {
     "build": "tsc && npm run tslint",
-    "test": "jasmine-ts \"**/*_spec.ts\"",
+    "test": "ts-node node_modules/jasmine/bin/jasmine \"**/*_spec.ts\"",
     "watch_test": "npm-watch test",
     "tslint": "tslint -c tslint.json -p tsconfig.json"
   },
-  "engines": {
-    "node": "~6.9.4"
-  },
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "ts-node": "^8.5.4"
   },
   "devDependencies": {
-    "@types/jasmine": "^2.8.6",
-    "@types/lodash": "^4.14.102",
-    "@types/node": "^9.4.6",
-    "jasmine": "~2.8.0",
+    "@types/jasmine": "^3.5.0",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^12.12.14",
+    "jasmine": "~3.5.0",
     "jasmine-node": "^3.0.0",
-    "jasmine-ts": "^0.2.1",
-    "npm-watch": "^0.3.0",
-    "tslint": "^5.9.1",
-    "typescript": "^2.7.1"
+    "npm-watch": "^0.6.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.3"
   }
 }

@@ -22,7 +22,7 @@
     "tslint": "tslint -c tslint.json -p tsconfig.json"
   },
   "dependencies": {
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "ts-node": "^9.1.1"
   },
   "devDependencies": {

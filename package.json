@@ -1,11 +1,14 @@
 {
   "author": "QWAN - Quality Without a Name",
-  "name": "vendingmachine_ts",
+  "name": "vendingrefact_ts",
   "description": "Exercise for code smells & refactoring with TypeScript and Jasmine",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "repository": {
     "type": "git",
     "url": "git@github.com:qwaneu/vendingrefact_ts.git"
+  },
+  "engines": {
+    "node": "~14.15.4"
   },
   "watch": {
     "test": {
@@ -22,18 +25,18 @@
     "tslint": "tslint -c tslint.json -p tsconfig.json"
   },
   "dependencies": {
-    "lodash": "^4.17.20",
-    "ts-node": "^9.1.1"
+    "lodash": "^4.17.21",
+    "ts-node": "^10.0.0"
   },
   "devDependencies": {
     "npm-check": "^5.9.2",
-    "@types/jasmine": "^3.6.2",
-    "@types/lodash": "^4.14.165",
-    "@types/node": "^12.14.14",
-    "jasmine": "~3.6.3",
+    "@types/jasmine": "^3.7.5",
+    "@types/lodash": "^4.14.170",
+    "@types/node": "^15.6.1",
+    "jasmine": "~3.7.0",
     "jasmine-node": "^3.0.0",
-    "npm-watch": "^0.7.0",
+    "npm-watch": "^0.9.0",
     "tslint": "^6.1.3",
-    "typescript": "^4.1.3"
+    "typescript": "^4.3.2"
   }
 }

@@ -1,15 +1,15 @@
 "use strict";
 
-import { Can, Choice, CanContainer, ContainerManager } from "../lib/can"
+import { Can, Choice, CanContainer, ContainerManager } from "./can"
 import { Chipknip } from "./chip";
 
 
 class VendingMachine {
   private cans : ContainerManager = new ContainerManager();
-  private payment_method : number;
-  private chipknip : Chipknip;
+  private payment_method : number = 0;
+  private chipknip : Chipknip | undefined = undefined;
   private c : number = -1;
-  private price: number;
+  private price: number = 0;
 
   set_value(v : number) {
     this.payment_method = 1;
@@ -60,9 +60,9 @@ class VendingMachine {
           // TODO: if this machine is in belgium this must be an error
           // {
 
-          if (this.chipknip.HasValue(this.cans.manage_get(choice).price)) {
+          if (this.chipknip!.HasValue(this.cans.manage_get(choice).price)) {
             var prc = this.cans.manage_get(choice).getPrice();
-            this.chipknip.Reduce(prc);
+            this.chipknip!.Reduce(prc);
             res = this.cans.manage_get(choice).getType();
           }
           break;

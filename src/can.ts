@@ -32,9 +32,9 @@ class ContainerManager {
 };
 
 class CanContainer {
-    private type: Can;
-    private price: number;
-    private amount: number;
+    private type: Can = Can.none;
+    private price: number = 0;
+    private amount: number = 0;
 
     getType(): Can {
         return this.type;

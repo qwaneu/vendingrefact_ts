@@ -1,8 +1,8 @@
 "use strict";
 
-import { VendingMachine } from "../lib/vendingmachine";
-import { Can, Choice, ContainerManager } from "../lib/can";
-import { Chipknip } from "../lib/chip";
+import { VendingMachine } from "@/vendingmachine";
+import { Can, Choice, ContainerManager } from "@/can";
+import { Chipknip } from "@/chip";
 
 describe("Vendingmachine", function () {
   let machine : VendingMachine;

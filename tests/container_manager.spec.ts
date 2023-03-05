@@ -1,7 +1,7 @@
 "use strict";
 
-import { Can, Choice, CanContainer, ContainerManager } from "../lib/can";
-import { Chipknip } from "../lib/chip";
+import { Can, Choice, CanContainer, ContainerManager } from "@/can";
+import { Chipknip } from "@/chip";
 
 describe("Can", function () {
 
